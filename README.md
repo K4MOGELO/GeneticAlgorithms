@@ -16,7 +16,7 @@ This project is a small, concrete version of that idea: a population of simple f
 ## The simulation
 
 <div align="center">
-  <video src="images/demo.mp4" controls width="600"></video>
+  <video src="https://github.com/user-attachments/assets/e21e9328-cb63-4287-97b8-81bda20b90a7" controls width="600"></video>
 </div>
 
 Each agent's behaviour comes from its genome, a vector of real-valued traits. By default that's speed, vision (how far it can sense food), turn rate, and energy cost, so no two agents act alike.
