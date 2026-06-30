@@ -7,7 +7,7 @@
 
 </div>
 
-## Optimization, the nature-inspired way
+## Nature Inspired Optimization
 
 Optimization is the problem of finding the best solution in a space too large to search by brute force. All you can really do is score a candidate and ask how good it is. Evolution has been solving exactly that problem for billions of years: generate variation, let the environment score it, keep what survives, repeat. Genetic algorithms borrow the trick wholesale.
 
