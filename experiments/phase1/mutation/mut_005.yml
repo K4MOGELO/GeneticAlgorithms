@@ -1,0 +1,21 @@
+run_name: "p1_mut_p005"
+seed: 7
+out_dir: "./runs"
+world: { nx: 120, ny: 150, torus: true, lifetime_ticks: 1000,
+         food: { name: "random_spots", n_spots: 600, per_spot: 1.0, p_regrow: 0.0 } }
+genome:
+  fields: 
+    - {name: speed, min: 0.0, max: 4.0, sigma: 0.2}
+    - {name: vision, min: 1.0, max: 10.0, sigma: 0.4}
+    - {name: turn, min: -1.0, max: 1.0, sigma: 0.1}
+    - {name: energy_cost, min: 0.0, max: 1.0, sigma: 0.05}
+
+ga:
+  pop_size: 100
+  generations: 50
+  elitism: 2
+  selection: { name: "tournament", k: 3 }
+  crossover: { name: "uniform", rate: 0.7 }
+  mutation:  { name: "gaussian", p: 0.05, sigma_mode: "per_gene" }
+log: { csv_every: 1, checkpoint_every: 10 }
+
